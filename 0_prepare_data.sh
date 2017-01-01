@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ROOT_DIR=$1/
+ROOT_DIR=$1
 NUM_FEATURES=$2
 
 # generating intermediate data format
