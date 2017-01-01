@@ -1,4 +1,4 @@
-# FSA
+# Fast Feature Selection for Learning to Rank
 
 This is the code used in "Fast feature selection for Learning to Rank" (2016) by A. Gigli, C. Lucchese, R. Perego, F. Nardini  http://dl.acm.org/citation.cfm?id=2970433.
 
