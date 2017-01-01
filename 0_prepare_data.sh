@@ -3,6 +3,8 @@
 ROOT_DIR=$1
 NUM_FEATURES=$2
 
+mkdir -p output
+
 # generating intermediate data format
 python prepare_data/prepare_data_from_svm.py $ROOT_DIR
 
