@@ -19,7 +19,7 @@ relevance_path = root + 'output/NDCG_single_feature.txt'
 
 
 #set the number of feature to select correstponding to 5%, 10%, 20%, 30%, 40%, 50%,75% of the feature set
-L=[26,52,104,156,208,260,389]
+L = [11,22,44,66,88,110,165]
 
 #list of features to be excluded
 
