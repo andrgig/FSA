@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ROOT_DIR=$1/
+ROOT_DIR=$1
 
 # running naive greedy feature selection
 python feature_selection/NGAS.py $ROOT_DIR 
