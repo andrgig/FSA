@@ -1,10 +1,12 @@
 #!/usr/bin/ Rscript
-args = commandArgs(trailingOnly=TRUE)
+args <- commandArgs(trailingOnly=TRUE)
 
-path = paste(args[1], "output/nonescludere.txt", sep = "")
+path <- paste(args[1], "output/nonescludere.txt", sep = "")
+print(path)
 
 lista <- read.csv(path, sep = '\t', header = 0)
-lista <- as.matrix(lista)
+lista$V1 <- gsub('feat', '', lista$V1)
+lista <- as.matrix(transform(lista, V1 = as.numeric(V1)))
 
 path = paste(args[1], "output/spear_corr.txt", sep = "")
 
@@ -14,7 +16,7 @@ corr <- as.matrix(corr)
 
 abs.corr <- abs(corr)
 abs.corr[!is.finite(abs.corr)] <- 0
-hc=hclust(as.dist(1-abs.corr),method = "ward", members = NULL)
+hc=hclust(as.dist(1-abs.corr),method = "ward.D", members = NULL)
 
 #plot(hc, cex=0.2) 
 
