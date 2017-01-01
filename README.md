@@ -20,7 +20,7 @@ where
 
 The code demo is ready to be tested on sample data extracted from [*istella LETOR dataset](http://blog.istella.it/istella-learning-to-rank-dataset/). The dataset contains 220 features in SVM format.
 
-**HINT**: If you simply want to run LambdaMART on the whole feature set you can create a one-row file containing a sequence of integers from 1 to `<FEATURES_NUMBER>` separated by white spaces and then run
+**HINT**: If you simply want to run LambdaMART on the whole features set you can create a one-row file containing a sequence of integers from 1 to `<FEATURES_NUMBER>` separated by white spaces and then run
 
 `python <DATA_DIRECTORY> <FEATURES_FILE>` 
 
