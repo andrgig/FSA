@@ -29,13 +29,13 @@ with open(root + r'output/spear_corr.txt', 'w') as f:
     f.truncate()
 f.close()
 
-for i in range(len(names)):
+for i in range(len(names)-1):
     
     temp = []
     
     #compute spearman for each pair of feature
     
-    for j in range(len(names)):
+    for j in range(len(names)-1):
         print "i,j: ",i,j
         if j > i:
             Xi = X.loc[:,names[i]].as_matrix()
