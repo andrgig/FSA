@@ -18,8 +18,11 @@ python feature_relevance/compute_relevance_lambdamart.py $ROOT_DIR/output/sample
                                                          $ROOT_DIR
 
 # build blacklist
-cat output/feature_rank.txt | grep nan | cut -f1 | cut -d't' -f2 | grep -v label > output/blacklist.txt
-# TODO: add python script to produce blacklist
+python prepare_data/build_features_blacklist.py $ROOT_DIR
+
+#or
+#cat output/feature_rank.txt | grep nan | cut -f1 | cut -d't' -f2 | grep -v label > output/blacklist.txt
+
 
 # computing pairwise feature similarity
 python feature_similarity/compute_pairwise_feature_similarity_spearman.py $ROOT_DIR
