@@ -234,7 +234,7 @@ def evaluate(model, fn,i):
     ndcg_at_k=ndcg(results, true_label, queries, 10)
     
     root=sys.argv[6] 
-    path=root + r'output\results_'+ i +'.txt'
+    path=root + r'output/results_'+ i +'.txt'
     
     with open(path,'w') as csvfile:
         writer = csv.writer(csvfile)
