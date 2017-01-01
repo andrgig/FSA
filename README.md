@@ -6,10 +6,15 @@ You can clone it ad run simply running in bash the following command
 
 0_prepare_data.sh `<YOU_DIRECTORY>` `<FEATURES_NUMBER>`
 
-1_run_fast_feature_selection.sh 
+1_run_fast_feature_selection.sh `<YOU_DIRECTORY>`
 
-2_run_competitors.sh
+2_run_competitors.sh `<YOU_DIRECTORY>`
 
-3_effectiveness_performance.sh
+3_effectiveness_performance.sh `<YOU_DIRECTORY>` `<FEATURES_FILE>` 
+
+where 
+- `<YOU_DIRECTORY>` is the path of the directory where you have cloned this repository.
+- `<FEATURES_NUMBER>` is the number of feature of the dataset (in this case 220).
+- `<FEATURES_FILE>` is the filename of the file containing the selected features. In the paper we compare GAS, NGAS, XGAS and HCAS and the engine compute different features subset for testing the performance of the different FSAs. In order to make the performance measurement more flexible the engine produce 4 files: gas_selection_test.txt, ngas_selection_test.txt, xgas_selection_test.txt, hcas_selection_test.txt. Each file contains 7 selections (one for each features selection subset dimension, ie 5%, 10%, 20%, 30%, 40%, 50%, 75%) for each algorithm.
 
 The code demo is ready to be tested on sample data extracted from [*istella LETOR dataset](http://blog.istella.it/istella-learning-to-rank-dataset/). The dataset contains 220 features in SVM format.
