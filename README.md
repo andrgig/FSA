@@ -4,13 +4,13 @@ This is the code used in "Fast feature selection for Learning to Rank" (2016) by
 
 You can clone it ad run simply running in bash the following command
 
-0_prepare_data.sh `<YOU_DIRECTORY>` `<FEATURES_NUMBER>`
+- `0_prepare_data.sh <YOU_DIRECTORY> <FEATURES_NUMBER>`
 
-1_run_fast_feature_selection.sh `<YOU_DIRECTORY>`
+- `1_run_fast_feature_selection.sh <YOU_DIRECTORY>`
 
-2_run_competitors.sh `<YOU_DIRECTORY>`
+- `2_run_competitors.sh <YOU_DIRECTORY>`
 
-3_effectiveness_performance.sh `<YOU_DIRECTORY>` `<FEATURES_FILE>` 
+- `3_effectiveness_performance.sh <YOU_DIRECTORY> <FEATURES_FILE>` 
 
 where 
 
