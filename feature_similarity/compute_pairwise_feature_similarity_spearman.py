@@ -13,8 +13,7 @@ df = pd.read_csv(root + r'output/sample_train_features.txt', sep = '\t', header 
 Y = df['label']
 
 #Let X be the feature matrix
-X = df.drop(["label", "query"], axis = 1)
-#X = df.loc[:,'feat1':'feat220']
+X = df.drop(["label", "query"], axis = 1) #take care 1 more clumn here has impact on lines 31 and 37
 
 #reset df to free space
 df = 0
