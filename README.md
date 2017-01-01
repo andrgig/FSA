@@ -2,7 +2,7 @@
 
 This is the code used in "Fast feature selection for Learning to Rank" (2016) by A. Gigli, C. Lucchese, R. Perego, F. Nardini  http://dl.acm.org/citation.cfm?id=2970433.
 
-You can clone it ad run simply running in bash the following command
+You can clone it ad run in bash through the following command
 
 - `0_prepare_data.sh <YOU_DIRECTORY> <FEATURES_NUMBER>`
 
