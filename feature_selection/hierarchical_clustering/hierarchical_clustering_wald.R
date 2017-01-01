@@ -18,7 +18,7 @@ hc=hclust(as.dist(1-abs.corr),method = "ward", members = NULL)
 
 #plot(hc, cex=0.2) 
 
-trials = c(26,52,104,156,208,260,389) 
+trials = c(11,22,44,66,88,110,165) 
 
 p_path = paste(args[1], "output/g_", sep = "")
 
