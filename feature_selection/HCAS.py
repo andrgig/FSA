@@ -11,7 +11,7 @@ root = sys.argv[1]
 
 relevance_path = root + 'output/NDCG_single_feature.txt'
 
-L = [11,22,44,66,88,110,165]
+L=[26,52,104,156,208,260,389]
 
 #list of features to be excluded
 
