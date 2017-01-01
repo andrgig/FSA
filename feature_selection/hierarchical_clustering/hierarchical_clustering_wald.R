@@ -18,8 +18,6 @@ abs.corr <- abs(corr)
 abs.corr[!is.finite(abs.corr)] <- 0
 hc=hclust(as.dist(1-abs.corr),method = "ward.D", members = NULL)
 
-#plot(hc, cex=0.2) 
-
 trials = c(11,22,44,66,88,110,165) 
 
 p_path = paste(args[1], "output/g_", sep = "")
