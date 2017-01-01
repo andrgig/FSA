@@ -1,6 +1,6 @@
 # FSA
 
-This code was used in "Fast feature selection for Learning to Rank" (2016) by A. Gigli, C. Lucchese, R. Perego, F. Nardini  http://dl.acm.org/citation.cfm?id=2970433.
+This is he code used in "Fast feature selection for Learning to Rank" (2016) by A. Gigli, C. Lucchese, R. Perego, F. Nardini  http://dl.acm.org/citation.cfm?id=2970433.
 
 You can clone it ad run simply running in bash the following command
 
@@ -13,6 +13,7 @@ You can clone it ad run simply running in bash the following command
 3_effectiveness_performance.sh `<YOU_DIRECTORY>` `<FEATURES_FILE>` 
 
 where 
+
 - `<YOU_DIRECTORY>` is the path of the directory where you have cloned this repository.
 - `<FEATURES_NUMBER>` is the number of feature of the dataset (in this case 220).
 - `<FEATURES_FILE>` is the filename of the file containing the selected features. In the paper we compare GAS, NGAS, XGAS and HCAS and the engine compute different features subset for testing the performance of the different FSAs. In order to make the performance measurement more flexible the engine produce 4 files: gas_selection_test.txt, ngas_selection_test.txt, xgas_selection_test.txt, hcas_selection_test.txt. Each file contains 7 selections (one for each features selection subset dimension, ie 5%, 10%, 20%, 30%, 40%, 50%, 75%) for each algorithm.
