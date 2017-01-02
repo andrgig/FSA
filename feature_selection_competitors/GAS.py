@@ -30,7 +30,7 @@ L = [11,22,44,66,88,110,165]
 
 #list of features to be excluded
 
-blacklist_file = open(root+'output/blacklist.txt','r')
+blacklist_file = open(root + 'output/blacklist.txt','r')
 
 blacklist_row = blacklist_file.readline()
 
@@ -47,7 +47,7 @@ lists = []
 for nr_feat in L:
     
     print nr_feat
-   
+    
     corr_file = open(similarity_path,'r')
     
     #build a dictionary of dictionaries containing the correlation matrix
@@ -61,8 +61,7 @@ for nr_feat in L:
     
     D = dict()
     
-    corr_row = corr_file.readline()
-    corr_row = corr_row.strip()
+    corr_row = corr_file.readline().strip()
     
     #the similarity matrix format is tab separated
     corr_row_fields = corr_row.split('\t')
@@ -98,14 +97,9 @@ for nr_feat in L:
 
     #build a dictionary containing relevance(feature(i),y)
     R = dict()
-    
-    #skip headline
-    r_row = r_file.readline()
 
     #read the first informative line
-    r_row = r_file.readline()
-    r_row = r_row.strip()
-    #r_row_fields=r_row.split('\t')
+    r_row = r_file.readline().strip()
     
     j = 1
     while (r_row != ""):
@@ -118,11 +112,9 @@ for nr_feat in L:
             
         j += 1
         r_row=r_file.readline()
-     
+    
     #initialize the feature subset list
     feature_list = []
-
-    print R
 
     #start from the most y-correlated feature
     temp = max(R, key=R.get)
