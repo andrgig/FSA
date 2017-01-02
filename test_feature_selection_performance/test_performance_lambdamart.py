@@ -319,13 +319,6 @@ def get_selected_features(feature_list, train_path, vali_path, test_path):
 
 if __name__ == "__main__":
 
-    #this part shoul de re-written
-    #parser = OptionParser()
-    #parser.add_option("-t", "--train", action = "store", type = "string", dest = "train_file")
-    #parser.add_option("-v", "--validation", action = "store", type = "string", dest = "val_file")
-    #parser.add_option("-p", "--predict", action = "store", type = "string", dest = "predict_file")
-    #options, args = parser.parse_args()
-    
     iterations = 100
     learning_rate = 0.01
     
