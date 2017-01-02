@@ -20,9 +20,9 @@ where
 
 The code demo is ready to be tested on sample data extracted from [*istella LETOR dataset](http://blog.istella.it/istella-learning-to-rank-dataset/). The dataset contains 220 features in SVM format, so please set `<FEATURES_NUMBER>` equal to 220 when launching `0_prepare_data.sh <YOU_DIRECTORY> <FEATURES_NUMBER>`
 
-**HINT**: If you simply want to run LambdaMART on the whole features set you can create a one-row file containing a sequence of integers from 1 to `<FEATURES_NUMBER>` separated by white spaces and then run
+**HINT**: If you simply want to run LambdaMART on the whole features set you can create a one-row file containing a sequence of integers from 1 to `<FEATURES_NUMBER>` separated by white spaces and then run from your `/test_feature_selection_performance` local directory
 
-`python <DATA_DIRECTORY> <FEATURES_FILE>` 
+`python test_performance_lambdamart.py <DATA_DIRECTORY> <FEATURES_FILE>` 
 
 where
 
