@@ -20,6 +20,7 @@ df = 0
 
 #get a list of features names
 names = list(X.columns.values)
+m = len(names)-1
 
 spear_corr = []
 
@@ -28,13 +29,13 @@ with open(root + r'output/spear_corr.txt', 'w') as f:
     f.truncate()
 f.close()
 
-for i in range(len(names)-1):
+for i in range(m):
     
     temp = []
     
     #compute spearman for each pair of feature
     
-    for j in range(len(names)-1):
+    for j in range(m):
         print "i,j: ",i,j
         if j > i:
             Xi = X.loc[:,names[i]].as_matrix()
